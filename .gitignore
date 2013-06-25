@@ -2,3 +2,4 @@ pboExtractor
 *.sqm
 *.exe
 *.o
+/cpboExtractor.cbp
