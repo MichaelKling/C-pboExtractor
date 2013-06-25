@@ -66,4 +66,5 @@ void PboExtractor_ExtractFile(char *filename,FILE *inputStream,FILE *outputStrea
         error("Searched file was not at the expected position");
     }
     PboExtractor_copyFileContents(inputStream,outputStream,searchedHeader->header->DataSize);
+    PboFileInfo_Release(searchedHeader);
 }
