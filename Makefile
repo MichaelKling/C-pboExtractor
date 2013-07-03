@@ -20,7 +20,7 @@ $(BIN):		$(OBJS)
 
 -include depend.mak
 
-depend:		
+depend:
 		$(CC) $(CFLAGS) -MM $(SRCS) > depend.mak
 
 clean:
@@ -28,3 +28,5 @@ clean:
 
 dist-clean:	clean
 		rm -f $(BIN) depend.mak
+
+cleanall: clean

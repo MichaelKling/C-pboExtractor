@@ -13,35 +13,35 @@ PboFileInfo *PboExtractor_getHeaderOfFile(char *filename,FILE *stream)
     PboFileInfo *searchedHeader;
     int headerSize;
     int dataSize;
-    
+
     currentHeader = NULL;
     searchedHeader = NULL;
     headerSize = 0;
     dataSize = 0;
-    
-    rewind(stream);   
+
+    rewind(stream);
     do {
         if (currentHeader != NULL && (searchedHeader == NULL || searchedHeader->header != currentHeader)) {
             PboHeader_Release(currentHeader);
         }
         currentHeader = PboHeader_CreateByConsumeStream(stream);
-        
+
         if (strcmp(filename,currentHeader->filename) == 0) {
             searchedHeader = (PboFileInfo*)allocate(sizeof(PboFileInfo));
             searchedHeader->header = currentHeader;
             searchedHeader->dataStart = dataSize; //For now only the size of the previous dataelements, later also the headers added.
         }
-        
-        headerSize += sizeof(PboHeader) - sizeof(char*) + strlen(currentHeader->filename)+1;
+
+        headerSize += 5 * PBOULONGSIZE + strlen(currentHeader->filename)+1;
         dataSize += currentHeader->DataSize;
-        
+
     } while (!PboHeader_isEndOfHeader(currentHeader) && !feof(stream));
 
     if (searchedHeader != NULL) {
         searchedHeader->dataStart = searchedHeader->dataStart + headerSize;
     } else {
         error("Could not find searched file %s",filename);
-    }    
+    }
 
     return searchedHeader;
 }
