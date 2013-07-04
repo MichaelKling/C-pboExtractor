@@ -29,4 +29,4 @@ clean:
 dist-clean:	clean
 		rm -f $(BIN) depend.mak
 
-cleanall: clean
+cleanall: dist-clean
