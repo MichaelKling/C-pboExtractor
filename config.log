@@ -69,83 +69,83 @@ PATH: /c/MinGW/bin
 ## Core tests. ##
 ## ----------- ##
 
-configure:2094: checking for a BSD-compatible install
-configure:2162: result: /bin/install -c
-configure:2173: checking whether build environment is sane
-configure:2223: result: yes
-configure:2364: checking for a thread-safe mkdir -p
-configure:2403: result: /bin/mkdir -p
-configure:2416: checking for gawk
-configure:2432: found /bin/gawk
-configure:2443: result: gawk
-configure:2454: checking whether make sets $(MAKE)
-configure:2476: result: yes
-configure:2608: checking for gcc
-configure:2624: found /bin/gcc
-configure:2635: result: gcc
-configure:2864: checking for C compiler version
-configure:2873: gcc --version >&5
+configure:2093: checking for a BSD-compatible install
+configure:2161: result: /bin/install -c
+configure:2172: checking whether build environment is sane
+configure:2222: result: yes
+configure:2363: checking for a thread-safe mkdir -p
+configure:2402: result: /bin/mkdir -p
+configure:2415: checking for gawk
+configure:2431: found /bin/gawk
+configure:2442: result: gawk
+configure:2453: checking whether make sets $(MAKE)
+configure:2475: result: yes
+configure:2605: checking for gcc
+configure:2621: found /bin/gcc
+configure:2632: result: gcc
+configure:2861: checking for C compiler version
+configure:2870: gcc --version >&5
 gcc (GCC) 3.4.4 (msys special)
 Copyright (C) 2004 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-configure:2884: $? = 0
-configure:2873: gcc -v >&5
+configure:2881: $? = 0
+configure:2870: gcc -v >&5
 Reading specs from /usr/lib/gcc/i686-pc-msys/3.4.4/specs
 Configured with: /home/cstrauss/build/gcc3/gcc-3.4.4/configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --infodir=/share/info --mandir=/share/man --libexecdir=/lib --enable-languages=c,c++ --disable-nls --enable-threads=posix --enable-sjlj-exceptions --enable-hash-synchronization --enable-libstdcxx-debug --with-newlib
 Thread model: posix
 gcc version 3.4.4 (msys special)
-configure:2884: $? = 0
-configure:2873: gcc -V >&5
+configure:2881: $? = 0
+configure:2870: gcc -V >&5
 gcc: `-V' option must have argument
-configure:2884: $? = 1
-configure:2873: gcc -qversion >&5
+configure:2881: $? = 1
+configure:2870: gcc -qversion >&5
 gcc: unrecognized option `-qversion'
 gcc: no input files
-configure:2884: $? = 1
-configure:2904: checking whether the C compiler works
-configure:2926: gcc    conftest.c  >&5
-configure:2930: $? = 0
-configure:2978: result: yes
-configure:2981: checking for C compiler default output file name
-configure:2983: result: a.exe
-configure:2989: checking for suffix of executables
-configure:2996: gcc -o conftest.exe    conftest.c  >&5
-configure:3000: $? = 0
-configure:3022: result: .exe
-configure:3044: checking whether we are cross compiling
-configure:3052: gcc -o conftest.exe    conftest.c  >&5
-configure:3056: $? = 0
-configure:3063: ./conftest.exe
-configure:3067: $? = 0
-configure:3082: result: no
-configure:3087: checking for suffix of object files
-configure:3109: gcc -c   conftest.c >&5
-configure:3113: $? = 0
-configure:3134: result: o
-configure:3138: checking whether we are using the GNU C compiler
-configure:3157: gcc -c   conftest.c >&5
-configure:3157: $? = 0
-configure:3166: result: yes
-configure:3175: checking whether gcc accepts -g
-configure:3195: gcc -c -g  conftest.c >&5
-configure:3195: $? = 0
-configure:3236: result: yes
-configure:3253: checking for gcc option to accept ISO C89
-configure:3317: gcc  -c -g -O2  conftest.c >&5
-configure:3317: $? = 0
-configure:3330: result: none needed
-configure:3361: checking for style of include used by make
-configure:3389: result: GNU
-configure:3414: checking dependency style of gcc
-configure:3524: result: gcc3
-configure:3549: checking how to run the C preprocessor
-configure:3580: gcc -E  conftest.c
-configure:3580: $? = 0
-configure:3594: gcc -E  conftest.c
+configure:2881: $? = 1
+configure:2901: checking whether the C compiler works
+configure:2923: gcc    conftest.c  >&5
+configure:2927: $? = 0
+configure:2975: result: yes
+configure:2978: checking for C compiler default output file name
+configure:2980: result: a.exe
+configure:2986: checking for suffix of executables
+configure:2993: gcc -o conftest.exe    conftest.c  >&5
+configure:2997: $? = 0
+configure:3019: result: .exe
+configure:3041: checking whether we are cross compiling
+configure:3049: gcc -o conftest.exe    conftest.c  >&5
+configure:3053: $? = 0
+configure:3060: ./conftest.exe
+configure:3064: $? = 0
+configure:3079: result: no
+configure:3084: checking for suffix of object files
+configure:3106: gcc -c   conftest.c >&5
+configure:3110: $? = 0
+configure:3131: result: o
+configure:3135: checking whether we are using the GNU C compiler
+configure:3154: gcc -c   conftest.c >&5
+configure:3154: $? = 0
+configure:3163: result: yes
+configure:3172: checking whether gcc accepts -g
+configure:3192: gcc -c -g  conftest.c >&5
+configure:3192: $? = 0
+configure:3233: result: yes
+configure:3250: checking for gcc option to accept ISO C89
+configure:3314: gcc  -c -g -O2  conftest.c >&5
+configure:3314: $? = 0
+configure:3327: result: none needed
+configure:3358: checking for style of include used by make
+configure:3386: result: GNU
+configure:3411: checking dependency style of gcc
+configure:3521: result: gcc3
+configure:3546: checking how to run the C preprocessor
+configure:3577: gcc -E  conftest.c
+configure:3577: $? = 0
+configure:3591: gcc -E  conftest.c
 conftest.c:11:28: ac_nonexistent.h: No such file or directory
-configure:3594: $? = 1
+configure:3591: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "pboExtractor"
@@ -158,12 +158,12 @@ configure: failed program was:
 | #define VERSION "0.1"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:3619: result: gcc -E
-configure:3639: gcc -E  conftest.c
-configure:3639: $? = 0
-configure:3653: gcc -E  conftest.c
+configure:3616: result: gcc -E
+configure:3636: gcc -E  conftest.c
+configure:3636: $? = 0
+configure:3650: gcc -E  conftest.c
 conftest.c:11:28: ac_nonexistent.h: No such file or directory
-configure:3653: $? = 1
+configure:3650: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "pboExtractor"
@@ -176,46 +176,46 @@ configure: failed program was:
 | #define VERSION "0.1"
 | /* end confdefs.h.  */
 | #include <ac_nonexistent.h>
-configure:3682: checking for grep that handles long lines and -e
-configure:3740: result: /bin/grep
-configure:3745: checking for egrep
-configure:3807: result: /bin/grep -E
-configure:3812: checking for ANSI C header files
-configure:3832: gcc -c -g -O2  conftest.c >&5
-configure:3832: $? = 0
-configure:3905: gcc -o conftest.exe -g -O2   conftest.c  >&5
-configure:3905: $? = 0
-configure:3905: ./conftest.exe
-configure:3905: $? = 0
-configure:3916: result: yes
-configure:3929: checking for sys/types.h
-configure:3929: gcc -c -g -O2  conftest.c >&5
-configure:3929: $? = 0
-configure:3929: result: yes
-configure:3929: checking for sys/stat.h
-configure:3929: gcc -c -g -O2  conftest.c >&5
-configure:3929: $? = 0
-configure:3929: result: yes
-configure:3929: checking for stdlib.h
-configure:3929: gcc -c -g -O2  conftest.c >&5
-configure:3929: $? = 0
-configure:3929: result: yes
-configure:3929: checking for string.h
-configure:3929: gcc -c -g -O2  conftest.c >&5
-configure:3929: $? = 0
-configure:3929: result: yes
-configure:3929: checking for memory.h
-configure:3929: gcc -c -g -O2  conftest.c >&5
-configure:3929: $? = 0
-configure:3929: result: yes
-configure:3929: checking for strings.h
-configure:3929: gcc -c -g -O2  conftest.c >&5
-configure:3929: $? = 0
-configure:3929: result: yes
-configure:3929: checking for inttypes.h
-configure:3929: gcc -c -g -O2  conftest.c >&5
+configure:3679: checking for grep that handles long lines and -e
+configure:3737: result: /bin/grep
+configure:3742: checking for egrep
+configure:3804: result: /bin/grep -E
+configure:3809: checking for ANSI C header files
+configure:3829: gcc -c -g -O2  conftest.c >&5
+configure:3829: $? = 0
+configure:3902: gcc -o conftest.exe -g -O2   conftest.c  >&5
+configure:3902: $? = 0
+configure:3902: ./conftest.exe
+configure:3902: $? = 0
+configure:3913: result: yes
+configure:3926: checking for sys/types.h
+configure:3926: gcc -c -g -O2  conftest.c >&5
+configure:3926: $? = 0
+configure:3926: result: yes
+configure:3926: checking for sys/stat.h
+configure:3926: gcc -c -g -O2  conftest.c >&5
+configure:3926: $? = 0
+configure:3926: result: yes
+configure:3926: checking for stdlib.h
+configure:3926: gcc -c -g -O2  conftest.c >&5
+configure:3926: $? = 0
+configure:3926: result: yes
+configure:3926: checking for string.h
+configure:3926: gcc -c -g -O2  conftest.c >&5
+configure:3926: $? = 0
+configure:3926: result: yes
+configure:3926: checking for memory.h
+configure:3926: gcc -c -g -O2  conftest.c >&5
+configure:3926: $? = 0
+configure:3926: result: yes
+configure:3926: checking for strings.h
+configure:3926: gcc -c -g -O2  conftest.c >&5
+configure:3926: $? = 0
+configure:3926: result: yes
+configure:3926: checking for inttypes.h
+configure:3926: gcc -c -g -O2  conftest.c >&5
 conftest.c:52:22: inttypes.h: No such file or directory
-configure:3929: $? = 1
+configure:3926: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "pboExtractor"
@@ -269,11 +269,11 @@ configure: failed program was:
 | #endif
 | 
 | #include <inttypes.h>
-configure:3929: result: no
-configure:3929: checking for stdint.h
-configure:3929: gcc -c -g -O2  conftest.c >&5
+configure:3926: result: no
+configure:3926: checking for stdint.h
+configure:3926: gcc -c -g -O2  conftest.c >&5
 conftest.c:52:20: stdint.h: No such file or directory
-configure:3929: $? = 1
+configure:3926: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "pboExtractor"
@@ -327,19 +327,19 @@ configure: failed program was:
 | #endif
 | 
 | #include <stdint.h>
-configure:3929: result: no
-configure:3929: checking for unistd.h
-configure:3929: gcc -c -g -O2  conftest.c >&5
-configure:3929: $? = 0
-configure:3929: result: yes
-configure:3944: checking for stdlib.h
-configure:3944: result: yes
-configure:3944: checking for string.h
-configure:3944: result: yes
-configure:3958: checking for error_at_line
-configure:3974: gcc -o conftest.exe -g -O2   conftest.c  >&5
+configure:3926: result: no
+configure:3926: checking for unistd.h
+configure:3926: gcc -c -g -O2  conftest.c >&5
+configure:3926: $? = 0
+configure:3926: result: yes
+configure:3941: checking for stdlib.h
+configure:3941: result: yes
+configure:3941: checking for string.h
+configure:3941: result: yes
+configure:3955: checking for error_at_line
+configure:3971: gcc -o conftest.exe -g -O2   conftest.c  >&5
 conftest.c:21:19: error.h: No such file or directory
-configure:3974: $? = 1
+configure:3971: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "pboExtractor"
@@ -369,16 +369,16 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:3982: result: no
-configure:3995: checking for stdlib.h
-configure:3995: result: yes
-configure:4005: checking for GNU libc compatible malloc
-configure:4029: gcc -o conftest.exe -g -O2   conftest.c  >&5
-configure:4029: $? = 0
-configure:4029: ./conftest.exe
-configure:4029: $? = 0
-configure:4039: result: yes
-configure:4229: creating ./config.status
+configure:3979: result: no
+configure:3992: checking for stdlib.h
+configure:3992: result: yes
+configure:4002: checking for GNU libc compatible malloc
+configure:4026: gcc -o conftest.exe -g -O2   conftest.c  >&5
+configure:4026: $? = 0
+configure:4026: ./conftest.exe
+configure:4026: $? = 0
+configure:4036: result: yes
+configure:4226: creating ./config.status
 
 ## ---------------------- ##
 ## Running config.status. ##

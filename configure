@@ -565,7 +565,6 @@ PACKAGE_STRING='pboExtractor 0.1'
 PACKAGE_BUGREPORT='michael.jo.kling@gmail.com'
 PACKAGE_URL=''
 
-ac_unique_file="common.h"
 # Factoring default headers for most tests.
 ac_includes_default="\
 #include <stdio.h>
@@ -2548,8 +2547,6 @@ MAKEINFO=${MAKEINFO-"${am_missing_run}makeinfo"}
 AMTAR=${AMTAR-"${am_missing_run}tar"}
 
 am__tar='${AMTAR} chof - "$$tardir"'; am__untar='${AMTAR} xf -'
-
-
 
 
 

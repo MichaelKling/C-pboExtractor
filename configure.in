@@ -6,8 +6,6 @@ AC_INIT([pboExtractor], [0.1], [michael.jo.kling@gmail.com])
 
 AM_INIT_AUTOMAKE
 
-AC_CONFIG_SRCDIR([common.h])
-
 # Checks for programs.
 AC_PROG_CC
 
