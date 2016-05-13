@@ -1,3 +1,7 @@
+AUTOMAKE_OPTIONS = foreign
+bin_PROGRAMS = pboExtractor
+pboExtractor_SOURCES = main.c pboDataTypes.c pboExtractor.c utils.c
+
 CC = gcc
 CFLAGS = -Wall -Wno-unused -g
 LDFLAGS = -g
